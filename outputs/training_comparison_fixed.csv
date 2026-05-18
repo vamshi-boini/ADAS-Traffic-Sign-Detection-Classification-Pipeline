@@ -1,0 +1,4 @@
+model,train_acc,val_acc,train_time,file_path,parameters
+Custom CNN,0.9375,0.8903061151504517,929.0454523563385,models/cnn_custom_trained.h5,1284203
+MobileNetV2,0.625,0.4804846942424774,982.8037822246552,models/mobilenetv2_trained.h5,2596971
+ResNet50,0.78125,0.519132673740387,2374.758859395981,models/resnet50_trained.h5,24123307

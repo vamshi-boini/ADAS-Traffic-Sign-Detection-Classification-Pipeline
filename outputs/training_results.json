@@ -1,0 +1,23 @@
+{
+    "Custom CNN": {
+        "train_acc": 1.0,
+        "val_acc": 0.9673469662666321,
+        "train_time": 2271.021377801895,
+        "model_path": "models\\cnn_custom_trained.h5",
+        "parameters": 849995
+    },
+    "MobileNetV2": {
+        "train_acc": 0.6875,
+        "val_acc": 0.4612244963645935,
+        "train_time": 1617.3945026397705,
+        "model_path": "models\\mobilenetv2_trained.h5",
+        "parameters": 2624363
+    },
+    "ResNet50": {
+        "train_acc": 0.21875,
+        "val_acc": 0.20382653176784515,
+        "train_time": 4370.650907993317,
+        "model_path": "models\\resnet50_trained.h5",
+        "parameters": 24150699
+    }
+}

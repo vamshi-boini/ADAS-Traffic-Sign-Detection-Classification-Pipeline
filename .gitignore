@@ -1,0 +1,10 @@
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+data/GTSRB_Dataset/

@@ -1,0 +1,188 @@
+Initializing data loader...
+
+Validating dataset structure...
+✓ Dataset validation passed!
+
+
+======================================================================
+PHASE 1: TRAINING CUSTOM CNN
+======================================================================
+
+Loading training and validation data...
+Training samples: 31368
+Validation samples: 7841
+Classes: 43
+
+Building Custom CNN architecture...
+✓ Model built and compiled
+  Total parameters: 849,995
+
+Training Custom CNN...
+Epochs: 20, Batch size: 32
+
+
+✓ Custom CNN saved to: models\cnn_custom_trained.h5
+  Training accuracy: 0.9062
+  Validation accuracy: 0.9117
+  Training time: 2309.32 seconds
+
+======================================================================
+PHASE 2: TRAINING MobileNetV2 (TRANSFER LEARNING)
+======================================================================
+
+Loading fresh training and validation data...
+Building MobileNetV2 architecture...
+✓ Model built and compiled
+  Total parameters: 2,624,363
+
+Training MobileNetV2...
+Epochs: 20, Batch size: 32
+
+
+✓ Custom CNN saved to: models\cnn_custom_trained.h5
+  Training accuracy: 1.0000
+  Validation accuracy: 0.9673
+  Training time: 2271.02 seconds
+
+======================================================================
+PHASE 2: TRAINING MobileNetV2 (TRANSFER LEARNING)
+======================================================================
+
+Loading fresh training and validation data...
+Building MobileNetV2 architecture...
+✓ Model built and compiled
+  Total parameters: 2,624,363
+
+Training MobileNetV2...
+Epochs: 20, Batch size: 32
+
+
+✓ MobileNetV2 saved to: models\mobilenetv2_trained.h5
+  Training accuracy: 0.5312
+  Validation accuracy: 0.4652
+  Training time: 1589.39 seconds
+
+======================================================================
+PHASE 3: TRAINING ResNet50 (TRANSFER LEARNING)
+======================================================================
+
+Loading fresh training and validation data...
+Building ResNet50 architecture...
+✓ Model built and compiled
+  Total parameters: 24,150,699
+
+Training ResNet50...
+Epochs: 20, Batch size: 32
+
+
+✓ MobileNetV2 saved to: models\mobilenetv2_trained.h5
+  Training accuracy: 0.6875
+  Validation accuracy: 0.4612
+  Training time: 1617.39 seconds
+
+======================================================================
+PHASE 3: TRAINING ResNet50 (TRANSFER LEARNING)
+======================================================================
+
+Loading fresh training and validation data...
+Building ResNet50 architecture...
+✓ Model built and compiled
+  Total parameters: 24,150,699
+
+Training ResNet50...
+Epochs: 20, Batch size: 32
+
+
+✓ ResNet50 saved to: models\resnet50_trained.h5
+  Training accuracy: 0.1875
+  Validation accuracy: 0.1802
+  Training time: 4356.31 seconds
+
+======================================================================
+MODEL COMPARISON
+======================================================================
+
+      Model  Train Accuracy  Val Accuracy  Training Time (s)  Parameters
+ Custom CNN         0.90625      0.911735        2309.324963      849995
+MobileNetV2         0.53125      0.465179        1589.391738     2624363
+   ResNet50         0.18750      0.180230        4356.313535    24150699
+
+
+Generating training history visualizations...
+✓ Saved: training_history_all_models.png
+✓ Saved: accuracy_comparison.png
+✓ Saved: training_time_comparison.png
+
+======================================================================
+TRAINING COMPLETE!
+======================================================================
+
+Best Model: Custom CNN
+Best Validation Accuracy: 0.9117
+
+Models saved to: models/
+  ✓ models\cnn_custom_trained.h5
+  ✓ models\mobilenetv2_trained.h5
+  ✓ models\resnet50_trained.h5
+
+Visualizations saved to: outputs/
+  ✓ training_history_all_models.png
+  ✓ accuracy_comparison.png
+  ✓ training_time_comparison.png
+  ✓ training_comparison.csv
+
+Training log: outputs\training_log.txt
+
+✓ All results saved!
+
+Next steps:
+1. Evaluate models on test set (12,630 images)
+2. Generate predictions and confidence analysis
+3. Deploy best model via Streamlit app
+
+✓ ResNet50 saved to: models\resnet50_trained.h5
+  Training accuracy: 0.2188
+  Validation accuracy: 0.2038
+  Training time: 4370.65 seconds
+
+======================================================================
+MODEL COMPARISON
+======================================================================
+
+      Model  Train Accuracy  Val Accuracy  Training Time (s)  Parameters
+ Custom CNN         1.00000      0.967347        2271.021378      849995
+MobileNetV2         0.68750      0.461224        1617.394503     2624363
+   ResNet50         0.21875      0.203827        4370.650908    24150699
+
+
+Generating training history visualizations...
+✓ Saved: training_history_all_models.png
+✓ Saved: accuracy_comparison.png
+✓ Saved: training_time_comparison.png
+
+======================================================================
+TRAINING COMPLETE!
+======================================================================
+
+Best Model: Custom CNN
+Best Validation Accuracy: 0.9673
+
+Models saved to: models/
+  ✓ models\cnn_custom_trained.h5
+  ✓ models\mobilenetv2_trained.h5
+  ✓ models\resnet50_trained.h5
+
+Visualizations saved to: outputs/
+  ✓ training_history_all_models.png
+  ✓ accuracy_comparison.png
+  ✓ training_time_comparison.png
+  ✓ training_comparison.csv
+
+Training log: outputs\training_log.txt
+
+✓ All results saved!
+
+Next steps:
+1. Evaluate models on test set (12,630 images)
+2. Generate predictions and confidence analysis
+3. Deploy best model via Streamlit app
